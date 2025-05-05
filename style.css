@@ -1,0 +1,155 @@
+/* Breaking Bad Theme CSS */
+
+/* Base Body Styling - Green/Yellow Gradient Background */
+body {
+    color: #FFFFFF; /* White text for better contrast on dark gradient */
+    background: linear-gradient(to bottom right, #2ECC71, #F1C40F); /* Green to Yellow gradient */
+    font-family: Helvetica, sans-serif; /* Clean sans-serif font */
+}
+
+/* Main App Container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(44, 62, 80, 0.8); /* Dark semi-transparent background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar Styling - Lab Inventory */
+[data-testid="stSidebar"] {
+    background-color: rgba(44, 62, 80, 0.9); /* Darker sidebar */
+    padding: 1rem;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #F1C40F; /* Yellow title */
+    text-align: center;
+    border-bottom: 2px solid #2ECC71; /* Green underline */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling - Themed */
+.stButton>button {
+    border: 2px solid #F1C40F; /* Yellow border */
+    border-radius: 20px;
+    color: #FFFFFF; /* White text */
+    background-color: #2ECC71; /* Green background */
+    padding: 10px 24px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton>button:hover {
+    background-color: #F1C40F; /* Yellow background on hover */
+    color: #2C3E50; /* Dark text on hover */
+    border: 2px solid #2ECC71; /* Green border on hover */
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7); /* Yellow glow */
+}
+
+.stButton>button:active {
+    background-color: #f39c12; /* Darker yellow on click */
+}
+
+/* Input Widgets */
+.stTextInput>div>div>input,
+.stDateInput>div>div>input,
+.stFileUploader>div>div>button,
+.stSelectbox>div>div {
+    border: 1px solid #2ECC71; /* Green border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    color: #FFFFFF;
+}
+
+/* Make input text white */
+.stTextInput input {
+    color: #FFFFFF !important;
+}
+
+/* Table Styling */
+.stDataFrame {
+    border: 3px solid #2ECC71; /* Green border */
+    border-radius: 8px;
+    background-color: rgba(52, 73, 94, 0.8); /* Slightly darker background for table */
+}
+
+.stDataFrame thead th {
+    background-color: #2ECC71; /* Green header */
+    color: #2C3E50; /* Dark text */
+    font-weight: bold;
+}
+
+.stDataFrame tbody tr:nth-child(even) {
+    background-color: rgba(44, 62, 80, 0.7); /* Darker alternating row */
+}
+.stDataFrame tbody tr:nth-child(odd) {
+    background-color: rgba(52, 73, 94, 0.7); /* Lighter alternating row */
+}
+.stDataFrame tbody td {
+    color: #F1C40F; /* Yellow text in cells */
+}
+
+/* Plotly Chart Background */
+.plotly-graph-div {
+    background-color: transparent !important; /* Make plotly background transparent */
+}
+
+/* Notification Boxes */
+.stAlert {
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+}
+[data-testid="stAlert"] > div {
+    font-weight: bold;
+}
+
+/* Success */
+[data-testid="stSuccess"] {
+    background-color: rgba(46, 204, 113, 0.2);
+    border-color: #2ECC71;
+    color: #2ECC71;
+}
+
+/* Info */
+[data-testid="stInfo"] {
+    background-color: rgba(241, 196, 15, 0.2);
+    border-color: #F1C40F;
+    color: #F1C40F;
+}
+
+/* Error */
+[data-testid="stError"] {
+    background-color: rgba(231, 76, 60, 0.2);
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+
+/* Header Styling */
+h1, h2, h3 {
+    color: #F1C40F; /* Yellow headers */
+    text-shadow: 1px 1px 2px #2C3E50; /* Subtle shadow */
+}
+
+/* Metric Styling */
+[data-testid="stMetric"] {
+    background-color: rgba(44, 62, 80, 0.6);
+    border: 1px solid #F1C40F;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #FFFFFF;
+}
+[data-testid="stMetricLabel"] {
+    color: #2ECC71; /* Green label */
+}
+[data-testid="stMetricValue"] {
+    color: #F1C40F; /* Yellow value */
+    font-size: 2em;
+}
+[data-testid="stMetricDelta"] {
+    color: #FFFFFF; /* White delta */
+}
