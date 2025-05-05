@@ -1,9 +1,7 @@
-An interactive Streamlit web application developed for the AF3005 Programming for Finance course assignment. This application allows users to perform machine learning tasks (Linear Regression, Logistic Regression, K-Means Clustering) on financial data, integrating datasets from Kragle (CSV) and real-time stock data from Yahoo Finance via the `yfinance` library.
+An interactive Streamlit web application developed for the AF3005 Programming for Finance course assignment. This application allows users to perform machine learning tasks (Linear Regression, Logistic Regression, K-Means Clustering) on financial data, integrating datasets from Kaggle (CSV).
 
 The entire application is wrapped in a fun "Breaking Bad" chemistry lab theme, featuring custom styling, thematic elements, and step-by-step guidance through the ML workflow.
 
-<!-- Add a screenshot or GIF of the running application here -->
-<!-- Example: ![App Screenshot](screenshot.png) -->
 
 ## Features ✨
 
